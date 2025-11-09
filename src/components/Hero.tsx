@@ -10,7 +10,7 @@ const Hero = () => {
     }
   };
   return <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-4">
-      <div className="container mx-auto max-w-4xl text-center">
+      <div className="container mx-auto max-w-4xl text-center bg-[#d7eed8]">
         <div className="mb-6">
           <p className="text-primary text-sm font-medium mb-2">Hi there! I'm</p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4">
