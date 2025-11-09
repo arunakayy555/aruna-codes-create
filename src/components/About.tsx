@@ -1,8 +1,6 @@
 import { Card } from "@/components/ui/card";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 px-4">
+  return <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold text-center mb-4">About Me</h2>
         <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
@@ -12,8 +10,7 @@ const About = () => {
             I'm a <span className="text-foreground font-semibold">Computer Science student from Chennai</span> with strong programming foundations in <span className="text-primary font-medium">Java, C, and C++</span>, and hands-on experience in frontend development using <span className="text-primary font-medium">JavaScript, HTML, and CSS</span>.
           </p>
           
-          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            I've built projects under <span className="text-foreground font-semibold">hackathon pressure</span> — from AI-powered tools to accessibility-focused platforms — that taught me teamwork, adaptability, and problem-solving under tight deadlines.
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">I've built projects under hackathon pressure - from AI-powered tools to accessibility-focused platforms - that taught me teamwork, adaptability, and problem-solving under tight deadlines.<span className="text-foreground font-semibold">hackathon pressure</span> — from AI-powered tools to accessibility-focused platforms — that taught me teamwork, adaptability, and problem-solving under tight deadlines.
           </p>
           
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -25,8 +22,6 @@ const About = () => {
           </p>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
