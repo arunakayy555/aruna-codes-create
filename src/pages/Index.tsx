@@ -5,15 +5,19 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
+
 const Index = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
-      <Hero className="bg-[#a2ec97]/[0.41]" />
+      <Hero />
       <About />
-      <Skills className="bg-[#d5f4d2]" />
+      <Skills />
       <Projects />
-      <Achievements className="bg-[#d5f4d2]" />
+      <Achievements />
       <Contact />
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
