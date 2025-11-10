@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const Skills = () => {
+const Skills = ({ className }: { className?: string }) => {
   const skillCategories = [
     {
       title: "Programming",
@@ -41,7 +41,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 bg-muted/30">
+    <section id="skills" className={`py-20 px-4 ${className || ''}`}>
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl font-bold text-center mb-4">Skills</h2>
         <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-const Hero = () => {
+const Hero = ({ className }: { className?: string }) => {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {
@@ -9,7 +9,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-4">
+  return <section id="hero" className={`min-h-screen flex items-center justify-center pt-20 px-4 ${className || ''}`}>
       <div className="container mx-auto max-w-4xl text-center bg-[#d7eed8]">
         <div className="mb-6">
           <p className="text-primary text-sm font-medium mb-2">Hi there! I'm</p>

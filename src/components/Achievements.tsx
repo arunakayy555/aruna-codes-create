@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Award, Trophy, BookOpen } from "lucide-react";
-const Achievements = () => {
+const Achievements = ({ className }: { className?: string }) => {
   const achievements = [{
     icon: Trophy,
     title: "Top 3 - VibeCoding Hackathon",
@@ -24,7 +24,7 @@ const Achievements = () => {
     role: "Creation Team Associate",
     period: "2024-25"
   }];
-  return <section id="achievements" className="py-20 px-4 bg-muted/30">
+  return <section id="achievements" className={`py-20 px-4 ${className || ''}`}>
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl font-bold text-center mb-4">Achievements & More</h2>
         <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
