@@ -10,7 +10,7 @@ const About = () => {
             I'm a <span className="text-foreground font-semibold">Computer Science student from Chennai</span> with strong programming foundations in <span className="text-primary font-medium">Java, C, and C++</span>, and hands-on experience in frontend development using <span className="text-primary font-medium">JavaScript, HTML, and CSS</span>.
           </p>
           
-          <p className="text-lg text-muted-foreground leading-relaxed mb-6">I've built projects under hackathon pressure - from AI-powered tools to accessibility-focused platforms - that taught me teamwork, adaptability, and problem-solving under tight deadlines.<span className="text-foreground font-semibold">hackathon pressure</span> — from AI-powered tools to accessibility-focused platforms — that taught me teamwork, adaptability, and problem-solving under tight deadlines.
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">I've built projects under hackathon pressure - from AI-powered tools to accessibility-focused platforms - that taught me teamwork, adaptability, and problem-solving under tight deadlines.hackathon pressure - from AI-powered tools to accessibility-focused platforms  that taught me teamwork, adaptability, and problem-solving under tight deadlines.<span className="text-foreground font-semibold">hackathon pressure</span> — from AI-powered tools to accessibility-focused platforms — that taught me teamwork, adaptability, and problem-solving under tight deadlines.
           </p>
           
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">

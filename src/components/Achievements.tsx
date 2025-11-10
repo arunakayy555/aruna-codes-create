@@ -73,7 +73,7 @@ const Achievements = () => {
             <div className="flex items-center gap-2">
               <span className="text-2xl">
             </span>
-              <span className="text-muted-foreground">Violinist and music enthusiast</span>
+              <span className="text-muted-foreground">Violinist and Music enthusiast</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">|</span>
