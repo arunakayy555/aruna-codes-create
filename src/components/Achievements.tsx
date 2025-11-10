@@ -1,91 +1,104 @@
-import { Card } from "@/components/ui/card";
-import { Award, Trophy, BookOpen } from "lucide-react";
 const Achievements = ({ className }: { className?: string }) => {
-  const achievements = [{
-    icon: Trophy,
-    title: "Top 3 - VibeCoding Hackathon",
-    color: "text-accent"
-  }, {
-    icon: Award,
-    title: "Participant - Hack Beyond Limits: Odyssey Hackathon",
-    color: "text-primary"
-  }, {
-    icon: Award,
-    title: "Designed logos and event creatives for the Association of Computer Engineers",
-    color: "text-accent"
-  }];
-  const certifications = ["CCNA: Introduction to Networks", "Introduction to Internet of Things - NPTEL", "Industry 4.0 and Industrial IoT - NPTEL"];
-  const organizations = [{
-    name: "National Service Scheme (NSS)",
-    role: "Member",
-    period: "Aug 2023 - Present"
-  }, {
-    name: "Association of Computer Engineers",
-    role: "Creation Team Associate",
-    period: "2024-25"
-  }];
-  return <section id="achievements" className={`py-20 px-4 ${className || ''}`}>
-      <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl font-bold text-center mb-4">Achievements & More</h2>
-        <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
+  const achievements = [
+    {
+      title: "Top 3 - VibeCoding Hackathon"
+    },
+    {
+      title: "Participant - Hack Beyond Limits: Odyssey Hackathon"
+    },
+    {
+      title: "Designed logos and event creatives for the Association of Computer Engineers"
+    }
+  ];
+
+  const certifications = [
+    "CCNA: Introduction to Networks",
+    "Introduction to Internet of Things - NPTEL",
+    "Industry 4.0 and Industrial IoT - NPTEL"
+  ];
+
+  const organizations = [
+    {
+      name: "National Service Scheme (NSS)",
+      role: "Member",
+      period: "Aug 2023 - Present"
+    },
+    {
+      name: "Association of Computer Engineers",
+      role: "Creation Team Associate",
+      period: "2024-25"
+    }
+  ];
+
+  return (
+    <section id="achievements" className={`py-32 px-6 md:px-8 ${className || ''}`}>
+      <div className="container mx-auto max-w-5xl">
+        <div className="text-center mb-20">
+          <h2 className="font-serif text-5xl md:text-6xl font-medium text-foreground mb-6 tracking-tight">
+            Recognition & Involvement
+          </h2>
+          <div className="h-px w-24 bg-primary/30 mx-auto"></div>
+        </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="p-6">
-            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-              <Trophy className="h-6 w-6 text-primary" />
+        <div className="space-y-16">
+          {/* Achievements */}
+          <div>
+            <h3 className="font-serif text-3xl font-medium mb-8 text-foreground">
               Achievements
             </h3>
-            <div className="space-y-4">
-              {achievements.map((achievement, index) => <div key={index} className="flex items-start gap-3">
-                  <achievement.icon className={`h-5 w-5 mt-0.5 ${achievement.color}`} />
-                  <p className="text-muted-foreground">{achievement.title}</p>
-                </div>)}
+            <div className="space-y-6 border-l-2 border-primary/20 pl-8">
+              {achievements.map((achievement, index) => (
+                <div key={index} className="pb-6 border-b border-border last:border-0">
+                  <p className="text-lg text-foreground/90">{achievement.title}</p>
+                </div>
+              ))}
             </div>
-          </Card>
+          </div>
 
-          <Card className="p-6">
-            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-accent" />
+          {/* Certifications */}
+          <div>
+            <h3 className="font-serif text-3xl font-medium mb-8 text-foreground">
               Certifications
             </h3>
-            <div className="space-y-3">
-              {certifications.map((cert, index) => <div key={index} className="flex items-start gap-3">
-                  <div className="h-2 w-2 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground">{cert}</p>
-                </div>)}
+            <div className="space-y-4 border-l-2 border-primary/20 pl-8">
+              {certifications.map((cert, index) => (
+                <p key={index} className="text-base text-muted-foreground leading-relaxed">
+                  {cert}
+                </p>
+              ))}
             </div>
-          </Card>
+          </div>
+
+          {/* Organizations */}
+          <div>
+            <h3 className="font-serif text-3xl font-medium mb-8 text-foreground">
+              Organizations
+            </h3>
+            <div className="space-y-6 border-l-2 border-primary/20 pl-8">
+              {organizations.map((org, index) => (
+                <div key={index} className="pb-6 border-b border-border last:border-0">
+                  <h4 className="text-lg font-medium text-foreground mb-1">{org.name}</h4>
+                  <p className="text-sm text-muted-foreground">{org.role} · {org.period}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Beyond Tech */}
+          <div className="border-t border-border pt-16 mt-16">
+            <h3 className="font-serif text-3xl font-medium mb-8 text-foreground">
+              Beyond Tech
+            </h3>
+            <div className="space-y-4">
+              <p className="text-lg text-muted-foreground">Violinist and Music enthusiast</p>
+              <p className="text-lg text-muted-foreground">Visual designer for college clubs and events</p>
+              <p className="text-lg text-muted-foreground">Active public speaker</p>
+            </div>
+          </div>
         </div>
-
-        <Card className="p-6 mb-8">
-          <h3 className="text-2xl font-semibold mb-6">Organizations</h3>
-          <div className="space-y-4">
-            {organizations.map((org, index) => <div key={index} className="border-l-2 border-primary pl-4">
-                <h4 className="font-semibold text-foreground">{org.name}</h4>
-                <p className="text-sm text-muted-foreground">{org.role} • {org.period}</p>
-              </div>)}
-          </div>
-        </Card>
-
-        <Card className="p-6 bg-gradient-to-br from-accent/10 to-primary/10">
-          <h3 className="text-2xl font-semibold mb-4">Beyond Tech</h3>
-          <div className="flex flex-wrap gap-4">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">
-            </span>
-              <span className="text-muted-foreground">Violinist and Music enthusiast</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">|</span>
-              <span className="text-muted-foreground">Visual designer </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">|</span>
-              <span className="text-muted-foreground">Public Speaker</span>
-            </div>
-          </div>
-        </Card>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Achievements;

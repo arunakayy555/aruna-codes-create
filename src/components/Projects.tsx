@@ -54,12 +54,16 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-32 px-6 md:px-8">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl font-bold text-center mb-4">Projects</h2>
-        <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
+        <div className="text-center mb-20">
+          <h2 className="font-serif text-5xl md:text-6xl font-medium text-foreground mb-6 tracking-tight">
+            Selected Work
+          </h2>
+          <div className="h-px w-24 bg-primary/30 mx-auto"></div>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}

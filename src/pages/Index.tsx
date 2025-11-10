@@ -6,14 +6,16 @@ import Projects from "@/components/Projects";
 import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
 const Index = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
-      <Hero className="bg-[#d7eed8]" />
+      <Hero />
       <About />
-      <Skills className="bg-[#d7eed8]" />
+      <Skills className="bg-secondary/20" />
       <Projects />
-      <Achievements className="bg-[#d7eed8]" />
+      <Achievements className="bg-secondary/20" />
       <Contact />
-    </div>;
+    </div>
+  );
 };
 export default Index;

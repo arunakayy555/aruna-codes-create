@@ -1,4 +1,3 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 interface ProjectCardProps {
@@ -11,37 +10,40 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, technologies, image, icon }: ProjectCardProps) => {
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
-      <div className="h-48 overflow-hidden bg-muted">
+    <div className="group">
+      <div className="overflow-hidden mb-6 aspect-[4/3]">
         <img 
           src={image} 
           alt={title}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
       </div>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-xl">
-          <span>{icon}</span>
+      
+      <div className="space-y-4">
+        <h3 className="font-serif text-3xl font-medium text-foreground">
           {title}
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="flex-1 flex flex-col">
-        <div className="space-y-2 mb-4 flex-1">
+        </h3>
+        
+        <div className="space-y-2">
           {description.map((point, index) => (
-            <CardDescription key={index} className="text-sm leading-relaxed">
-              → {point}
-            </CardDescription>
+            <p key={index} className="text-base text-muted-foreground leading-relaxed">
+              {point}
+            </p>
           ))}
         </div>
-        <div className="flex flex-wrap gap-2 mt-auto">
+        
+        <div className="flex flex-wrap gap-2 pt-2">
           {technologies.map((tech) => (
-            <Badge key={tech} variant="secondary" className="text-xs">
+            <span 
+              key={tech}
+              className="text-sm text-muted-foreground bg-secondary/30 px-3 py-1 rounded-sm"
+            >
               {tech}
-            </Badge>
+            </span>
           ))}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 };
 
