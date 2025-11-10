@@ -92,7 +92,7 @@ const Achievements = ({ className }: { className?: string }) => {
             <div className="space-y-4">
               <p className="text-lg text-muted-foreground">Violinist and Music enthusiast</p>
               <p className="text-lg text-muted-foreground">Visual designer for college clubs and events</p>
-              <p className="text-lg text-muted-foreground">Active public speaker</p>
+              <p className="text-lg text-muted-foreground">Public Speaker</p>
             </div>
           </div>
         </div>

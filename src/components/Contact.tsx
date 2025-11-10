@@ -10,7 +10,7 @@ const Contact = () => {
           </h2>
           <div className="h-px w-24 bg-primary/30 mx-auto mb-12"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.
+            Always up for collaborating on projects that challenge convention and create real value!
           </p>
         </div>
         

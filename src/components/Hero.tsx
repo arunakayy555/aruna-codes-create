@@ -14,7 +14,7 @@ const Hero = ({ className }: { className?: string }) => {
         <div className="space-y-8">
           <div>
             <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
-              Portfolio
+            
             </p>
             <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-medium text-foreground mb-6 tracking-tight">
               Arunalakshmi K
@@ -27,7 +27,7 @@ const Hero = ({ className }: { className?: string }) => {
           </p>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I love challenges that blend logic, creativity, and real-world impact — from efficient algorithms to intuitive user experiences
+            I love challenges that blend logic, creativity, and real-world impact - from efficient algorithms to intuitive user experiences!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
